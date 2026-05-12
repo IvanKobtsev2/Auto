@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataGenerator {
-    public static List<Auto> createAutos(List<Person> persons){
+    public static List<Auto> createAutos(List<Person> persons) {
         List<Person> owners = new ArrayList<>();
         owners.add(persons.get(0));
 
@@ -132,9 +132,10 @@ public class DataGenerator {
         autos.add(auto4);
         autos.add(auto5);
 
-       return autos;
+        return autos;
     }
-    public static List<Person> createPersons(){
+
+    public static List<Person> createPersons() {
         Person bogolyubov = new Person(
                 "ВХК873654",
                 "Боголюбов",

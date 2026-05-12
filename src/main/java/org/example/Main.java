@@ -23,7 +23,7 @@ public class Main {
                 .forEach(System.out::println);
 
         autos.stream()
-               .flatMap(auto -> auto.getAuthorizedDrivers().stream())
+                .flatMap(auto -> auto.getAuthorizedDrivers().stream())
                 .map(Person::getLastName)
                 .forEach(System.out::println);
 
@@ -53,14 +53,14 @@ public class Main {
         autos.stream()
                 .max((a1, a2) -> Integer.compare(a1.getAuthorizedDrivers().size(),
                         a2.getAuthorizedDrivers().size()))
-               .ifPresent(System.out::println);
+                .ifPresent(System.out::println);
 
         autos.stream()
-                .collect(groupingBy(Auto::getBrand,counting()))
+                .collect(groupingBy(Auto::getBrand, counting()))
                 .forEach((brand, count) -> System.out.println(brand + " → " + count));
 
         autos.stream()
-                .collect(groupingBy(Auto::getColor,counting()))
+                .collect(groupingBy(Auto::getColor, counting()))
                 .forEach((color, count) -> System.out.println(color + " → " + count));
 
         autos.stream()

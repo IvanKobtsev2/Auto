@@ -10,8 +10,8 @@ public class Person {
     private final LocalDate birthDate;
     private final String registrationAddress;
 
-    public Person (String driverLicenseNumber,String lastName,String firstName,
-                   String middleName,LocalDate birthDate,String registrationAddress){
+    public Person(String driverLicenseNumber, String lastName, String firstName,
+                  String middleName, LocalDate birthDate, String registrationAddress) {
         this.driverLicenseNumber = driverLicenseNumber;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -23,18 +23,23 @@ public class Person {
     public String getDriverLicenseNumber() {
         return driverLicenseNumber;
     }
+
     public String getLastName() {
         return lastName;
     }
+
     public String getFirstName() {
         return firstName;
     }
+
     public String getMiddleName() {
         return middleName;
     }
+
     public LocalDate getBirthDate() {
         return birthDate;
     }
+
     public String getRegistrationAddress() {
         return registrationAddress;
     }
@@ -46,5 +51,6 @@ public class Person {
                 "\n First name:" + firstName +
                 "\n Middle name:" + middleName +
                 "\n Birth date:" + birthDate +
-                "\n Registration address:" + registrationAddress + '\n';}
+                "\n Registration address:" + registrationAddress + '\n';
+    }
 }
